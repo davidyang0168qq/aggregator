@@ -29,7 +29,8 @@ env:
 jobs:
   process:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 120   # 设置2小时
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
