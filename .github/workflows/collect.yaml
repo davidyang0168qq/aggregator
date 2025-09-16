@@ -7,7 +7,7 @@ on:
 
 concurrency:
   group: ${{ github.repository }}-${{ github.event_name }}  # 添加 event_name 来区分任务类型
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 env:
   # time zone
